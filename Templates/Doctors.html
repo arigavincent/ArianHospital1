@@ -56,16 +56,30 @@
       </div>
     </nav>
 
-<section class="hero-section">
-  <div class="hero-bg"></div>
-  <div class="hero-overlay"></div>
+
+<section class="position-relative text-center text-white" style="height: 50vh;">
+  <!-- Background image -->
+<div class="position-absolute top-0 start-0 w-100 h-100 bg-cover"></div>
+
+<style>
+.bg-cover {
+    background-image: url("{% static 'Images/docs_docs.png' %}");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    z-index: -1;
+}
+</style>
+
+  <!-- Optional dark overlay for readability -->
+  <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-50" style="z-index: -1;"></div>
+
+  <!-- Content -->
   <div class="container d-flex flex-column justify-content-center align-items-center h-100">
     <h1 class="fw-bold mb-3 display-3">Our Doctors</h1>
     <p class="mb-0 fs-4">Meet the experts who care for your health.</p>
   </div>
 </section>
-
-
 
   <!-- Doctors Section -->
   <section class="py-5">

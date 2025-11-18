@@ -1,0 +1,80 @@
+/* Hero Section Styles */
+.hero-section {
+    position: relative;
+    text-align: center;
+    color: white;
+    height: 70vh;
+    overflow: hidden;
+}
+
+.hero-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.45);
+}
+
+.hero-content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+/* Department Box Styles */
+.department-box {
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    padding: 25px 15px;
+    text-align: center;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+    cursor: pointer;
+    height: 100%;
+}
+
+.department-box:hover {
+    background-color: #198754;
+    color: #fff;
+    transform: translateY(-5px);
+}
+
+.department-box h5 {
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.department-box p {
+    font-size: 0.95rem;
+    margin: 0;
+}
+
+/* Department Card Hover Animation */
+.department-card {
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.department-card:hover {
+    background-color: #198754;
+    color: #fff;
+    transform: scale(1.03);
+}
+
+.department-card:hover h5,
+.department-card:hover p {
+    color: #fff !important;
+}

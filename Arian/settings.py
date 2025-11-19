@@ -75,10 +75,15 @@ TEMPLATES = [
 WSGI_APPLICATION = 'Arian.wsgi.application'
 
 
-# Database
-# https://docs.djangoproject.com/en/5.2/ref/settings/#databases
 DATABASES = {
-    'default': dj_database_url.config(default=os.environ.get("DATABASE_URL"))
+    'default': {
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'arian_db',
+        'USER': 'root',
+        'PASSWORD': '1308Ariga#',
+        'HOST': 'localhost',
+        'PORT': '3306',
+    }
 }
 
 
@@ -128,6 +133,7 @@ STATIC_ROOT = BASE_DIR / 'staticfiles'
 # https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
 
 
 

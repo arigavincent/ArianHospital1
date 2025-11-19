@@ -78,10 +78,10 @@ WSGI_APPLICATION = 'Arian.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'arian_db',
-        'USER': 'root',
-        'PASSWORD': '1308Ariga#',
-        'HOST': 'localhost',
+        'NAME': 'Anita$arian_db',       
+        'USER': 'Anita',                
+        'PASSWORD': '1308Ariga#',       
+        'HOST': 'Anita.mysql.pythonanywhere-services.com',  
         'PORT': '3306',
     }
 }
@@ -133,6 +133,7 @@ STATIC_ROOT = BASE_DIR / 'staticfiles'
 # https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
 
 
 
